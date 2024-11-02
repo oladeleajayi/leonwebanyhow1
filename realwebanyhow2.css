@@ -1,0 +1,85 @@
+/*box model hack*/
+* {
+    box-sizing: border-box;
+
+}
+
+/*clear fix hack */
+.clearfixafter {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/******************
+/*LAYOUT
+/***********************/
+nav,
+main,
+aside {
+    width: 15%;
+    float: left;
+
+}
+
+nav>img {
+    width: 30%;
+    height: 50px;
+    margin-top: 5%;
+}
+
+nav>img+h2 {
+    color: #ffa600d7;
+}
+
+nav ul {
+    padding-left: 0%;
+}
+
+nav ul>li {
+    margin: 5%;
+    display: block;
+
+
+}
+
+main {
+    width: 50%;
+}
+
+main img {
+    width: 100%;
+    height: 350px;
+}
+
+aside> {
+    width: 35%;
+}
+
+aside>ul>li {
+    display: block;
+}
+
+
+
+
+
+
+/*introduction of responsive website,desktop,laptop,tablet and mobile phones*/
+@media screen and (max-width:700px) {
+    section {
+        background: blue;
+    }
+}
+
+/************************
+ /*ADDITTIONAL STYLES
+ /*************************/
